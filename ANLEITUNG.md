@@ -17,7 +17,8 @@ Ohne Schritt 2 funktioniert alles, die Daten liegen dann nur auf deinem Gerät.
 | `index.html` | Startseite |
 | `app.js` | die App |
 | `styles.css` | Gestaltung |
-| `manifest.webmanifest`, `icon-*.png`, `apple-touch-icon.png` | Symbol und „zum Startbildschirm hinzufügen" |
+| `manifest.webmanifest`, `icon-*.png`, `apple-touch-icon.png` | App-Symbol (Vereinswappen) und „zum Startbildschirm hinzufügen" |
+| `wappen.png` | Wappen in der Kopfzeile der App |
 | `.nojekyll` | verhindert, dass GitHub die Dateien umbaut |
 | `ANLEITUNG.md` | diese Datei |
 
@@ -148,5 +149,7 @@ Schreibrechte, oder die Ablage lässt keine Zugriffe aus dem Browser zu.
   ihr euch nicht überschreiben. Nur wenn zwei im selben Moment dieselbe Aufstellung ändern,
   gewinnt die spätere Eingabe.
 - **Ohne Internet** läuft die App weiter und gleicht ab, sobald wieder Netz da ist.
-- **Sicherung.** Die Adresse der Ablage im Browser öffnen zeigt den kompletten Datenbestand
-  als Text. Vor der Winterpause einmal kopieren und ablegen.
+- **Sicherung.** In der App unter **Optionen → Sicherung** lädst du mit einem Tipp eine Datei
+  mit allen Spielern, Spieltagen, Zusagen und Kadern herunter. Über **Einspielen** kommt sie
+  zurück — der aktuelle Stand wird dabei ersetzt, bei gemeinsamer Ablage für das ganze
+  Trainerteam. Empfehlung: einmal vor der Winterpause und vor größeren Umbauten.

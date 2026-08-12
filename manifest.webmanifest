@@ -1,16 +1,32 @@
 {
-  "name": "U11 Kaderplaner",
-  "short_name": "Kaderplaner",
+  "name": "SV Weyhe U11 Kaderplaner",
+  "short_name": "U11 Kader",
   "description": "Spieltage, Zusagen und Kader für zwei U11-Mannschaften",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#f5f5f5",
+  "background_color": "#ffffff",
   "theme_color": "#171717",
   "lang": "de",
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }
