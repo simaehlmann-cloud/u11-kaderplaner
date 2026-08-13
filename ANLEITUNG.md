@@ -134,6 +134,54 @@ Schreibrechte, oder die Ablage lässt keine Zugriffe aus dem Browser zu.
 
 ---
 
+## Schritt 4 · Android-App (APK) bauen — optional
+
+Auf dem Handy reicht eigentlich „Zum Startbildschirm hinzufügen". Wer trotzdem eine echte
+Installationsdatei möchte, kann sie GitHub bauen lassen — ohne eigenen Rechner, ohne
+Android Studio. Die App verhält sich genauso und synchronisiert weiterhin über eure Ablage.
+
+1. Im Repository auf den Reiter **Actions**. Beim ersten Mal fragt GitHub nach — mit
+   **„I understand my workflows, go ahead and enable them"** bestätigen.
+2. Links **Android-App bauen** anklicken, rechts **Run workflow** → **Run workflow**.
+3. Nach etwa fünf Minuten den fertigen Lauf öffnen. Unten unter **Artifacts** liegt
+   `u11-kaderplaner-apk` als ZIP zum Herunterladen; darin steckt `app-debug.apk`.
+4. Die APK auf das Handy kopieren und öffnen. Android fragt, ob Apps aus dieser Quelle
+   installiert werden dürfen — einmal erlauben.
+
+Dazu drei ehrliche Hinweise:
+
+- Die APK ist **Debug-signiert**. Sie lässt sich installieren, aber nicht über den Play Store
+  verteilen. Für den internen Gebrauch im Trainerteam ist das in Ordnung.
+- iPhones können keine APK installieren. Dort bleibt es beim Startbildschirm-Symbol — das
+  funktioniert genauso gut.
+- In der App gibt es keine Web-Adresse zum Teilen. Der Knopf zeigt dann statt eines Links die
+  **Adresse der Ablage**, die die anderen einmal unter *Optionen* eintragen.
+
+Ändert sich die App später, einfach den Workflow erneut starten — die neue APK enthält den
+aktuellen Stand.
+
+### Adresse der Ablage fest in die APK einbauen — mit Bedacht
+
+Wer die Adresse nicht bei jeder Installation eintippen will, kann sie beim Bauen hinterlegen:
+
+1. Im Repository auf **Settings → Secrets and variables → Actions → New repository secret**.
+2. Name: `SYNC_URL`. Wert: die vollständige Adresse eurer Ablage.
+3. Workflow neu starten. Die fertige APK ist dann sofort verbunden.
+
+Das Secret steht **nicht** im Repository und landet auch nicht in der Web-Fassung auf GitHub
+Pages — nur in der APK.
+
+**Aber:** Bei einem öffentlichen Repository kann jeder, der die Actions-Seite aufruft, die
+gebaute APK herunterladen. Wer sie auseinandernimmt, findet die Adresse darin. Damit wäre
+sie faktisch öffentlich — und wer die Adresse hat, kann alle Daten lesen und ändern.
+
+Deshalb die ehrliche Empfehlung: **Adresse lieber einmal pro Gerät eintippen.** Das dauert
+zehn Sekunden und passiert genau einmal. Wenn ihr die Adresse doch einbauen wollt, dann nur
+mit einem privaten Repository (dort sind auch die Artefakte geschützt) — und in jedem Fall
+mit sparsamen Daten: Vorname und abgekürzter Nachname, sonst nichts.
+
+---
+
 ## Was ihr wissen solltet
 
 - **Die Adresse der Ablage ist das Passwort.** Wer sie kennt, kann alle Daten lesen und
