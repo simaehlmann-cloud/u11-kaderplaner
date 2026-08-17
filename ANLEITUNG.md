@@ -193,6 +193,10 @@ mit sparsamen Daten: Vorname und abgekürzter Nachname, sonst nichts.
   Grüner Punkt und Uhrzeit heißen: verbunden. „nur hier" heißt: keine Ablage eingerichtet.
   „Fehler" heißt: Adresse falsch oder gerade nicht erreichbar — Eingaben gehen nicht
   verloren, sie bleiben auf dem Gerät und gehen beim nächsten Abgleich hoch.
+- **Zusagen.** Drei Zustände je Kind: Haken (dabei), Fragezeichen (Eltern wissen es noch nicht),
+  Kreuz (nicht dabei). Für den Kadervorschlag zählen nur Haken. Bleiben weniger als zwei
+  Auswechselspieler übrig, weist die App darauf hin, bei welchen Kindern eine Nachfrage
+  lohnt.
 - **Gleichzeitiges Arbeiten.** Zusagen werden einzeln pro Spieler zusammengeführt, da könnt
   ihr euch nicht überschreiben. Nur wenn zwei im selben Moment dieselbe Aufstellung ändern,
   gewinnt die spätere Eingabe.
