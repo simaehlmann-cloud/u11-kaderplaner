@@ -1,11 +1,31 @@
 name: Android-App bauen
 
-# Startet von Hand: Reiter "Actions" -> "Android-App bauen" -> "Run workflow"
+# Laeuft automatisch, sobald sich eine Datei der App aendert -
+# und zusaetzlich jederzeit von Hand ueber "Actions" -> "Run workflow".
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'index.html'
+      - 'app.js'
+      - 'styles.css'
+      - 'manifest.webmanifest'
+      - 'config.js'
+      - '*.png'
+      - 'assets/**'
+      - 'package.json'
+      - 'capacitor.config.json'
+      - '.github/workflows/android-apk.yml'
 
 permissions:
   contents: read
+
+# Wird waehrend eines Laufs erneut hochgeladen, ersetzt der neue Lauf den alten
+concurrency:
+  group: apk-bau
+  cancel-in-progress: true
 
 jobs:
   apk:
