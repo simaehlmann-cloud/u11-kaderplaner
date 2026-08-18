@@ -5,6 +5,7 @@
   "description": "Kaderplaner fuer zwei U11-Mannschaften mit Festspiel-Kontrolle",
   "dependencies": {
     "@capacitor/android": "6.2.1",
+    "@capacitor/app": "6.0.2",
     "@capacitor/core": "6.2.1"
   },
   "devDependencies": {
