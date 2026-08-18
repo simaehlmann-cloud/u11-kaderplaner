@@ -193,6 +193,10 @@ mit sparsamen Daten: Vorname und abgekürzter Nachname, sonst nichts.
   Grüner Punkt und Uhrzeit heißen: verbunden. „nur hier" heißt: keine Ablage eingerichtet.
   „Fehler" heißt: Adresse falsch oder gerade nicht erreichbar — Eingaben gehen nicht
   verloren, sie bleiben auf dem Gerät und gehen beim nächsten Abgleich hoch.
+- **Mannschaften.** Unter *Optionen → Mannschaften* stehen Name, Spielform (Feldspieler ohne
+  Torwart) und Kadergröße je Mannschaft. Die App rechnet daraus die Zahl auf dem Feld und die
+  Auswechselspieler aus. So lässt sich die App später auf 7+1, 9+1 oder 10+1 umstellen, ohne
+  dass etwas neu gebaut werden muss.
 - **Spieltag-Infos.** Heim oder auswärts, Gegner, Treffen an der ZSA, Treffen am Spielort
   (nur auswärts), Anstoß und die Adresse des Spielorts. Aus der Adresse baut die App einen
   Google-Maps-Link; ein fertiger Maps-Link darf auch direkt eingefügt werden. Der Knopf
