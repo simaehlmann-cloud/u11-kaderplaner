@@ -198,7 +198,12 @@ mit sparsamen Daten: Vorname und abgekürzter Nachname, sonst nichts.
   Google-Maps-Link; ein fertiger Maps-Link darf auch direkt eingefügt werden. Der Knopf
   **Teilen** erzeugt daraus eine fertige Nachricht mit allen Zeiten, Navigation und Kader.
 - **Zurück-Taste.** Sie schließt erst die geöffnete Ansicht und fragt auf der Startseite
-  nach, bevor die App zugeht.
+  nach, bevor die App zugeht. Im Browser greift das ab der ersten Berührung des Bildschirms —
+  vorher lässt Chrome keinen eigenen Verlaufseintrag zu.
+- **Blick nach vorn.** Beim Aufstellen der oberen Mannschaft prüft die App, wie viele Kinder
+  beim nächsten Pflichtspiel der unteren noch spielberechtigt wären. Wird es dort zu eng für
+  eine Mannschaft plus zwei Auswechselspieler, warnt sie und nennt die Kinder, an denen es
+  liegt.
 - **Zusagen.** Drei Zustände je Kind: Haken (dabei), Fragezeichen (Eltern wissen es noch nicht),
   Kreuz (nicht dabei). Für den Kadervorschlag zählen nur Haken. Bleiben weniger als zwei
   Auswechselspieler übrig, weist die App darauf hin, bei welchen Kindern eine Nachfrage
